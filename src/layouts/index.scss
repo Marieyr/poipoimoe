@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*导航高度*/
+$navheight:60px;
+
+.poi-footer{
+height: 100px;
+background-color: aqua;
+}
+.poi-header{
+    display: flex;
+    height: $navheight;
+    background: azure;
+    .poi-logo{
+        width: 15%;
+        background-color: bisque;
+    }
+    .poi-nav{
+        width: 70%;
+        background-color: blueviolet;
+    }
+    .poi-other{
+        width: 15%;
+        background-color:chocolate;
+    }
+    ul{
+        display: flex;
+        li{
+            padding: 0 20px;
+            line-height: $navheight;
+        }
+    }
+}
