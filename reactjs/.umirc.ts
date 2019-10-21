@@ -18,7 +18,7 @@ const config: IConfig =  {
       antd: true,
       dva: true,
       dynamicImport: { webpackChunkName: true },
-      title: 'Master',
+      title: 'reactjs',
       dll: true,
       
       routes: {
@@ -31,7 +31,7 @@ const config: IConfig =  {
         ],
       },
     }],
-  ]
+  ],
 }
 
 export default config;

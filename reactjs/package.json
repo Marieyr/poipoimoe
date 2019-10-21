@@ -9,12 +9,10 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "antd": "^3.19.5",
     "dva": "^2.6.0-beta.6",
-    "node-sass": "^4.12.0",
+    "antd": "^3.19.5",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "sass-loader": "^8.0.0"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/jest": "^23.3.12",
@@ -39,14 +37,8 @@
     "umi-types": "^0.3.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "tslint --fix",
-      "git add"
-    ],
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.{ts,tsx}": ["tslint --fix", "git add"],
+    "*.{js,jsx}": ["eslint --fix", "git add"]
   },
   "engines": {
     "node": ">=8.0.0"
