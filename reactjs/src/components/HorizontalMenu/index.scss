@@ -7,22 +7,19 @@ $navheight: 60px;
 .poi-header {
   display: flex;
   height: $navheight;
-  background: azure;
+  background: #eee;
   position: fixed;
   width: 100%;
 
 
   .poi-logo {
     width: 25%;
-    background-color: bisque;
   }
   .poi-nav {
     width: 60%;
-    background-color: blueviolet;
   }
   .poi-other {
     width: 15%;
-    background-color: chocolate;
   }
   ul {
     display: flex;

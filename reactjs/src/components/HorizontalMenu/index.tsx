@@ -14,12 +14,14 @@ export default class index extends Component<{},IProps> {
   }
 
   componentDidMount() {
+    //监听滚动隐藏导航事件
     window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {
+    //卸载滚动吟唱导航事件
     window.removeEventListener('scroll', this.handleScroll);
   }
-
+  //滚动隐藏导航使事件
   handleScroll=(event: Event)=>{
     let scrollTop = document.documentElement.scrollTop;
     if (scrollTop === 0) {
