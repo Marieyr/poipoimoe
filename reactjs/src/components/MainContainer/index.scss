@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+//外容器
+.poi-body {
+  height: 1000px;
+  background-color: #aaa;
+}
+//内容器
+.poi-container{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    background-color: cadetblue;
+    margin: 0 auto;
+    .poi-articleContainer{
+        width: 60%;
+        height: 100%;
+        background-color: chartreuse;
+        .poi-article{
+            width: 100%;
+            height: 300px;
+            margin: 10px 0;
+            background-color: white;
+        }
+    }
+    .poi-sideContainer{
+        width: 30%;
+        height: 100%;
+        background-color:chartreuse;
+        margin-left: 10%;
+        .poi-side{
+            width: 100%;
+            height: 300px;
+            margin: 10px 0;
+            background-color: white;
+        }
+    }
+}

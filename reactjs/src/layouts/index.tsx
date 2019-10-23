@@ -10,7 +10,7 @@ const BasicLayout: React.FC = props => {
     <div>
       <Nav />
       {props.children}
-     <Footer/>
+      <Footer />
     </div>
   );
 };

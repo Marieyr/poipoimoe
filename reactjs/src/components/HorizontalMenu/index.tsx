@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styles from './index.scss';
 
-interface IProps{
+interface IState{
     isScroll:boolean
 }
 
-export default class index extends Component<{},IProps> {
+export default class index extends Component<{},IState> {
   constructor(props: {}) {
     super(props);
     this.state={
