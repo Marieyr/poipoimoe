@@ -39,11 +39,30 @@ export class SideContainer extends Component {
 export class ArticleBlock extends Component{
     render(){
         return(
-            <article className={styles['poi-article']}>{this.props.children}</article>
+            <article className={styles['poi-article']}>
+              <header>
+                <h2>标题标题标题标题</h2>
+                <p>日期：2019-10-24 作者：作者 浏览量：0</p>
+              </header>
+              <div>
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+                内容内容内容内容内容内容内容内容内容
+              </div>
+            {this.props.children}
+            </article>
         )
     }
 }
-
+/**
+ * 附加模块
+ */
 export class SideBlock extends Component{
     render(){
         return(
