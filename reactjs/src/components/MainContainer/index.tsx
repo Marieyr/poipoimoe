@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 
 import styles from './index.scss';
 
-interface IProp {}
+interface IArticleProp {
+  title: string;
+  createDate: string;
+  author: string;
+  clickVolume: number;
+  content: string;
+}
 
 /**
  * 主体容器
  */
-export class MainContainer extends Component<IProp, {}> {
+export class MainContainer extends Component {
   render() {
     return (
       <div className={styles['poi-body']}>
@@ -33,42 +39,34 @@ export class SideContainer extends Component {
     return <section className={styles['poi-sideContainer']}>{this.props.children}</section>;
   }
 }
+
 /**
  * 文章模块
  */
-export class ArticleBlock extends Component{
-    render(){
-        return(
-            <article className={styles['poi-article']}>
-              <header>
-                <h2>标题标题标题标题</h2>
-                <p>日期：2019-10-24 作者：作者 浏览量：0</p>
-              </header>
-              <div>
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-                内容内容内容内容内容内容内容内容内容
-              </div>
-            {this.props.children}
-            </article>
-        )
-    }
+export class ArticleBlock extends Component<IArticleProp, {}> {
+  render() {
+    return (
+      <article className={styles['poi-article']}>
+        <header>
+          <h2>{this.props.title}</h2>
+          <p>
+            日期：{this.props.createDate} 作者：{this.props.author} 浏览量：{this.props.clickVolume}
+          </p>
+        </header>
+        <div>
+         {this.props.content}
+        </div>
+      </article>
+    );
+  }
 }
 /**
  * 附加模块
  */
-export class SideBlock extends Component{
-    render(){
-        return(
-            <article className={styles['poi-side']}>{this.props.children}</article>
-        )
-    }
+export class SideBlock extends Component {
+  render() {
+    return <article className={styles['poi-side']}>{this.props.children}</article>;
+  }
 }
 
 export default MainContainer;
