@@ -9,7 +9,10 @@ import {
   SideBlock,
 } from '../components/MainContainer';
 
-interface IArticleState {
+interface IState {
+  Article:Array<IArticle>
+}
+interface IArticle{
   title: string;
   createDate: string;
   author: string;
@@ -17,25 +20,26 @@ interface IArticleState {
   content: string;
 }
 
-export class index extends Component<{}, Array<IArticleState>> {
+export class index extends Component<{}, IState> {
   constructor(props: {}) {
     super(props);
   }
   componentDidMount(){
-    this.setState([
-      
-    ])
+    this.setState(
+      {Article:[{title:"1",createDate:"",author:"",clickVolume:1,content:""}]}
+    )
   }
   render() {
     let block;
-    if (this.state=== null) {
+    if (this.state === null) {
       block = (
         <div>暂无数据</div>
       )
     } else {
       block = (
-        this.state.forEach((k,v)=>{
+        this.state.Article.forEach((k,v)=>{
           <ArticleBlock {...k}/>
+          console.log(k)
         })
       );
     }
@@ -45,9 +49,8 @@ export class index extends Component<{}, Array<IArticleState>> {
         <div className={styles['poi-carousel']}>
           <img src={require('../assets/images/bg.jpg')} />
         </div>
-
         <MainContainer>
-          <ArticleContainer/>
+          <ArticleContainer />
           <SideContainer>
             <SideBlock />
             <SideBlock />
