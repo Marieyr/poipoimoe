@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+//背景图片
+.poi-carousel {
+  width: 100%;
+  height: 754px;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+//外容器
+.poi-body {
+  height: 1000px;
+  background-color: #aaa;
+}
+//内容器
+.poi-container{
+    display: flex;
+    width: 65%;
+    background-color: cadetblue;
+    margin: 0 auto;
+    .poi-articleContainer{
+        width: 100%;
+        background-color: chartreuse;
+
+    }
+    .poi-sideContainer{
+        width: 33%;
+        height: 100%;
+        background-color:chartreuse;
+        margin-left: 2%;
+        
+    }
+}

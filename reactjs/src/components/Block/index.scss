@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+.poi-article{
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+    background-color: white;
+    overflow: hidden;
+    header{
+        text-align: center;
+        h2{
+            margin-top: 26px;
+        }
+        p{
+            font-size: 12px;
+            padding: 10px 0;
+        }
+    }
+    div{
+        padding: 20px 26px;
+        font-size: 14px;
+        text-indent: 28px;
+    }
+
+
+}
+
+.poi-side{
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+    background-color: white;
+}
