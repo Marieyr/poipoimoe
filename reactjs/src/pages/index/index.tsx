@@ -17,6 +17,8 @@ function index() {
 
           <section className={styles['poi-articleContainer']}>
             <ArticleBlock />
+            <ArticleBlock />
+            <ArticleBlock />
           </section>
 
           <section className={styles['poi-sideContainer']}>
