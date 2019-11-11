@@ -4,7 +4,8 @@ import styles from './index.scss';
 
 import { ArticleBlock, SideBlock } from '../../components/Block';
 
-export default function() {
+function index(props) {
+  console.log(props.text)
   return (
     <section>
 
@@ -30,5 +31,11 @@ export default function() {
     </section>
   );
 }
+function mapStateToProps(state){
+  return {
+    text:state.articles.text
+  }
+}
+export default connect(mapStateToProps)(index);
 
 

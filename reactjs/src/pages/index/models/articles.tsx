@@ -1,6 +1,8 @@
 export default {
     namespace: 'articles',
-    state: [],
+    state: {
+      text:"111111111111"
+    },
     reducers: {
       
     },
