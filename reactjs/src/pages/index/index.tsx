@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'dva';
 import styles from './index.scss';
 
 import { ArticleBlock, SideBlock } from '../../components/Block';
 
-function index() {
+export default function() {
   return (
     <section>
 
@@ -31,4 +31,4 @@ function index() {
   );
 }
 
-export default index;
+
