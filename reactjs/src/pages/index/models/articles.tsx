@@ -4,6 +4,6 @@ export default {
       text:"111111111111"
     },
     reducers: {
-      
+      text:"22222222"
     },
   };
