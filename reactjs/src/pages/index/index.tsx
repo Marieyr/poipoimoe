@@ -4,8 +4,11 @@ import styles from './index.scss';
 
 import { ArticleBlock, SideBlock } from '../../components/Block';
 
-function index(props) {
-  console.log(props.text)
+import {GlobalState} from '@/common/type';
+
+function index({article}:GlobalState) {
+  
+  console.log(article.title)
   return (
     <section>
 
@@ -31,11 +34,11 @@ function index(props) {
     </section>
   );
 }
-function mapStateToProps(state){
-  return {
-    text:state.articles.text
-  }
+
+const mapStateToProps=(article)=>{
+  return article;
 }
+
 export default connect(mapStateToProps)(index);
 
 
