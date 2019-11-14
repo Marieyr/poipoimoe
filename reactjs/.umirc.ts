@@ -12,6 +12,15 @@ const config: IConfig =  {
       ]
     }
   ],
+  chainWebpack(config,{webpack}){
+    webpack.proxy={
+      "/api":{
+        target:"http://localhost",
+        changeOrigin:true,
+        pathRewrite: { "^/api" : "" }
+      }
+    }
+  },
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {

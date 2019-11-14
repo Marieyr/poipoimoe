@@ -1,19 +1,23 @@
 import React from 'react';
-import { connect } from 'dva';
+import dva, { connect } from 'dva';
 import styles from './index.scss';
 
 import { ArticleBlock, SideBlock } from '../../components/Block';
 
 import {GlobalState} from '@/common/type';
 
+const banner=require('../../assets/images/bg.jpg');
+
+
 function index({article}:GlobalState) {
   
   console.log(article.title)
+  
   return (
     <section>
 
       <div className={styles['poi-carousel']}>
-        <img src={require('../../assets/images/bg.jpg')} />
+        <img src={banner} />
       </div>
 
       <div className={styles['poi-body']}>
