@@ -1,8 +1,7 @@
+
 export default {
-    namespace: 'article',
-    state: {
-      title:"111111111111"
-    },
+    namespace: 'articles',
+    state: [],
     reducers: {
      
     },

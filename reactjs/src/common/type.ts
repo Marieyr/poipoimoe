@@ -1,5 +1,5 @@
 
- interface ArticleModel{
+ export interface ArticleModel{
     title:string, //标题
     createDate:string,//创建时间
     updateDate:string,//修改时间
@@ -9,5 +9,5 @@
 }
 
 export interface GlobalState{
-    article:ArticleModel;
+    articles:Array<ArticleModel>;
 }

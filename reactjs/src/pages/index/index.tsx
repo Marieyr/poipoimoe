@@ -1,48 +1,38 @@
 import React from 'react';
 import dva, { connect } from 'dva';
 import styles from './index.scss';
-
 import { ArticleBlock, SideBlock } from '../../components/Block';
+import { get } from '../../utils/Request';
+import { GlobalState } from '@/common/type';
 
-import {GlobalState} from '@/common/type';
+const banner = require('../../assets/images/bg.jpg');
 
-const banner=require('../../assets/images/bg.jpg');
+function index({ articles = [] }: GlobalState) {
+  let list = articles.map((item, key) => {
+    return <ArticleBlock {...item} key={key} />;
+  });
 
-
-function index({article}:GlobalState) {
-  
-  console.log(article.title)
-  
   return (
     <section>
-
       <div className={styles['poi-carousel']}>
-        <img src={banner} />
+        <img />
       </div>
 
       <div className={styles['poi-body']}>
         <div className={styles['poi-container']}>
-
-          <section className={styles['poi-articleContainer']}>
-            <ArticleBlock />
-            <ArticleBlock />
-            <ArticleBlock />
-          </section>
+          <section className={styles['poi-articleContainer']}>{list}</section>
 
           <section className={styles['poi-sideContainer']}>
             <SideBlock />
           </section>
-
         </div>
       </div>
     </section>
   );
 }
 
-const mapStateToProps=(article)=>{
+const mapStateToProps = article => {
   return article;
-}
+};
 
 export default connect(mapStateToProps)(index);
-
-

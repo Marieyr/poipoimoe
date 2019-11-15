@@ -15,7 +15,7 @@ const config: IConfig =  {
   chainWebpack(config,{webpack}){
     webpack.proxy={
       "/api":{
-        target:"http://localhost",
+        target:"http://localhost/",
         changeOrigin:true,
         pathRewrite: { "^/api" : "" }
       }

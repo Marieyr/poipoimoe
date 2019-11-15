@@ -2,17 +2,19 @@ import React from 'react';
 
 import styles from './index.scss';
 
+import {ArticleModel} from '../../common/type'
+
 /**
  * 文章模块
  */
-export const ArticleBlock= ()=> {
+export const ArticleBlock= (props:ArticleModel)=> {
   return (
     <article className={styles['poi-article']}>
       <header>
-        <h2>标题</h2>
-        <p>日期：2018-8-8 作者：作者 浏览量：0</p>
+        <h2>{props.title}</h2>
+  <p>日期：{props.createDate} 作者：{props.author} 浏览量：{props.pageViews}</p>
       </header>
-      <div>内容</div>
+      <div>{props.content}</div>
     </article>
   );
 }
