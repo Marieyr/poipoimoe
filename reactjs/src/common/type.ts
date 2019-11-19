@@ -9,5 +9,5 @@
 }
 
 export interface GlobalState{
-    articles:Array<ArticleModel>;
+    articleList:Array<ArticleModel>;
 }

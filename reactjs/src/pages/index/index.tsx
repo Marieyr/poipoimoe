@@ -7,8 +7,10 @@ import { GlobalState } from '@/common/type';
 
 const banner = require('../../assets/images/bg.jpg');
 
-function index({ articles = [] }: GlobalState) {
-  let list = articles.map((item, key) => {
+function index({ articleList = [] }: GlobalState) {
+  
+
+  let list = articleList.map((item, key) => {
     return <ArticleBlock {...item} key={key} />;
   });
 
@@ -31,8 +33,8 @@ function index({ articles = [] }: GlobalState) {
   );
 }
 
-const mapStateToProps = article => {
-  return article;
+const mapStateToProps = state => {
+  return state.articles;
 };
 
 export default connect(mapStateToProps)(index);
