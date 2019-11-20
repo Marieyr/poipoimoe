@@ -1,8 +1,7 @@
 import React from 'react';
 import dva, { connect } from 'dva';
 import styles from './index.scss';
-import { ArticleBlock, SideBlock } from '../../components/Block';
-import { get } from '../../utils/Request';
+import { ArticleBlock, SideBlock } from './components/Block';
 import { GlobalState } from '@/common/type';
 
 const banner = require('../../assets/images/bg.jpg');

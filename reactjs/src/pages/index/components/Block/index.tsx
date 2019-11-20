@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './index.scss';
 
-import { ArticleModel } from '../../common/type';
+import { ArticleModel } from '../../../../common/type';
 
 /**
  * 文章模块

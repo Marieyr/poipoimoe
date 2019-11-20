@@ -1,4 +1,6 @@
 
+import {GetArticleList} from '../service/api'
+
 export default {
     namespace: 'articles',
     state: {
@@ -6,18 +8,18 @@ export default {
     },
     reducers: {
       getArticles(state,action){
-        console.log(state)
-        console.log(action)
         return {...state,...action.payload};
       }
     },
     effects:{
-      getArticles({payload={}},{call,put})
+      *getArticles({payload={}},{call,put})
       {
-        return put({
-          type:'getArticle',
+
+        const res=yield call(GetArticleList,payload);
+        yield put({
+          type:'getArticles',
           payload:{
-            articleList:[{title:'11111111111'}]
+            articleList:res.data
           }
 
         })
@@ -26,11 +28,12 @@ export default {
     subscriptions:{
       loading({dispatch,history})
       {
-        return history.listen(({pathname})=>{
+        return history.listen(({pathname,query})=>{
           if(pathname==='/')
           {
             dispatch({
-              type:'getArticles'
+              type:'getArticles',
+              payload:query
             })
           }
         })
