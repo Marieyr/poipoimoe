@@ -251,9 +251,9 @@ paket-files/
 .idea/
 *.sln.iml
 
-# Poi
-src/Poi.Web/Logs/*
-src/Poi.Web.Host/Logs/*
-src/Poi.IdentityServer/Logs/*
-src/Poi.HttpApi.Host/Logs/*
-src/Poi.HttpApi.Host/Logs/*
+# Moe
+src/Poi.Moe.Web/Logs/*
+src/Poi.Moe.Web.Host/Logs/*
+src/Poi.Moe.IdentityServer/Logs/*
+src/Poi.Moe.HttpApi.Host/Logs/*
+src/Poi.Moe.HttpApi.Host/Logs/*

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Poi.Moe</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191129084512_CreateBlogTable.cs" />
+    <Compile Remove="Migrations\20191129084512_CreateBlogTable.Designer.cs" />
+    <Compile Remove="Migrations\20191129084806_CreateBlogTable.cs" />
+    <Compile Remove="Migrations\20191129084806_CreateBlogTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Poi.Moe.EntityFrameworkCore\Poi.Moe.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
