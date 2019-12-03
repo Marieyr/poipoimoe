@@ -4,13 +4,12 @@ using Volo.Abp.Users;
 
 namespace Poi.Moe.Users
 {
-    /* This entity shares the same table/collection ("AbpUsers" by default) with the
-     * IdentityUser entity of the Identity module.
+    /* 该实体与Identity模块的IdentityUser实体共享相同的表/集合（默认情况下为“ AbpUsers”）。
      *
-     * - You can define your custom properties into this class.
-     * - You never create or delete this entity, because it is Identity module's job.
-     * - You can query users from database with this entity.
-     * - You can update values of your custom properties.
+     * - 您可以在此类中定义自定义属性。
+     * - 您永远不会创建或删除该实体，因为它是Identity模块的工作。
+     * - 您可以使用该实体从数据库中查询用户。
+     * - 您可以更新自定义属性的值。
      */
     public class AppUser : FullAuditedAggregateRoot<Guid>, IUser
     {
@@ -40,7 +39,7 @@ namespace Poi.Moe.Users
 
         #endregion
 
-        /* Add your own properties here. Example:
+        /*在此处添加您自己的属性。 例：
          *
          * public virtual string MyProperty { get; set; }
          */
