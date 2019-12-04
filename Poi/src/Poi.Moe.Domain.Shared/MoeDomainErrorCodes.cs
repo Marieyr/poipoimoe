@@ -2,6 +2,6 @@
 {
     public static class MoeDomainErrorCodes
     {
-        /* You can add your business exception error codes here, as constants */
+        /* 您可以在此处将业务异常错误代码添加为常量 */
     }
 }

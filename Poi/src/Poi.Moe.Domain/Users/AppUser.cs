@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Volo.Abp.Domain.Entities.Auditing;
 using Volo.Abp.Users;
 
@@ -15,10 +17,10 @@ namespace Poi.Moe.Users
     {
         #region Base properties
 
-        /* These properties are shared with the IdentityUser entity of the Identity module.
-         * Do not change these properties through this class. Instead, use Identity module
-         * services (like IdentityUserManager) to change them.
-         * So, this properties are designed as read only!
+        /* 这些属性与Identity模块的IdentityUser实体共享。
+         * 请勿通过此类更改这些属性。 而是使用身份模块
+         * 服务（例如Identity UserManager）进行更改。
+         * 因此，此属性被设计为只读！
          */
 
         public virtual Guid? TenantId { get; private set; }
@@ -43,7 +45,8 @@ namespace Poi.Moe.Users
          *
          * public virtual string MyProperty { get; set; }
          */
-
+        public virtual Blog.ArticlePraise ArticlePraise { get; set; }
+        public virtual Blog.Article Article { get; set; }
         private AppUser()
         {
             

@@ -19,7 +19,7 @@ namespace Poi.Moe.Blog
         /// </summary>
         public string Content { get; set; }
         /// <summary>
-        /// 一对一
+        /// 一对一n
         /// </summary>
         public virtual Article Article { get; set; }
     }

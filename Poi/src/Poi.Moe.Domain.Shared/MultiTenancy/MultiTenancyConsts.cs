@@ -6,6 +6,6 @@
          * 如果您永远不需要多租户，可以删除
          * 相关模块和代码部分，包括此文件。
          */
-        public const bool IsEnabled = true;
+        public const bool IsEnabled = false;
     }
 }

@@ -38,7 +38,6 @@ namespace Poi.Moe.Blog
         /// 分类id
         /// </summary>
         public Guid ClassId { get; set; }
-
         /// <summary>
         /// 是否精华
         /// </summary>
@@ -47,7 +46,6 @@ namespace Poi.Moe.Blog
         /// 是否置顶
         /// </summary>
         public bool IsTop { get; set; }
-
         /// <summary>
         /// 一对一
         /// </summary>
