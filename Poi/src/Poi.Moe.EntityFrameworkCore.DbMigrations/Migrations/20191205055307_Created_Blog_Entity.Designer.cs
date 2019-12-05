@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Poi.Moe.EntityFrameworkCore;
 
 namespace Poi.Moe.Migrations
 {
     [DbContext(typeof(MoeMigrationsDbContext))]
-    partial class MoeMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191205055307_Created_Blog_Entity")]
+    partial class Created_Blog_Entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

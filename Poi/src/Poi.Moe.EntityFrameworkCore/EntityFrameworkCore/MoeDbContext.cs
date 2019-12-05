@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Poi.Moe.Blog;
 using Poi.Moe.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -30,7 +29,7 @@ namespace Poi.Moe.EntityFrameworkCore
         public DbSet<Blog.ArticlePraise> ArticlePraises { get; set; }
         public DbSet<Blog.Classification> Classifications { get; set; }
         public DbSet<Blog.Tag> Tags { get; set; }
-        public DbSet<ArticleTag> ArticleTags { get; set; }
+        public DbSet<Blog.ArticleTag> ArticleTags { get; set; }
 
         public MoeDbContext(DbContextOptions<MoeDbContext> options)
             : base(options)

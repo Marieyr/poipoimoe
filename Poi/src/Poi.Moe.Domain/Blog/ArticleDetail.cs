@@ -13,13 +13,13 @@ namespace Poi.Moe.Blog
         /// <summary>
         /// 文章id
         /// </summary>
-        public string ArticleId { get; set; }
+        public Guid ArticleId { get; set; }
         /// <summary>
         /// 文章内容
         /// </summary>
         public string Content { get; set; }
         /// <summary>
-        /// 一对一n
+        /// 一对一
         /// </summary>
         public virtual Article Article { get; set; }
     }

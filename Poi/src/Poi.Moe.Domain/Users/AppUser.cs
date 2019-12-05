@@ -45,8 +45,7 @@ namespace Poi.Moe.Users
          *
          * public virtual string MyProperty { get; set; }
          */
-        public virtual Blog.ArticlePraise ArticlePraise { get; set; }
-        public virtual Blog.Article Article { get; set; }
+
         private AppUser()
         {
             

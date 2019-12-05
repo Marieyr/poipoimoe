@@ -27,6 +27,6 @@ namespace Poi.Moe.Blog
         /// <summary>
         /// 点赞人id
         /// </summary>
-        public Users.AppUser UserId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

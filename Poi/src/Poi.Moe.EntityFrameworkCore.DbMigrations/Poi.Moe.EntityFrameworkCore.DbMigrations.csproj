@@ -12,6 +12,12 @@
     <Compile Remove="Migrations\20191129084512_CreateBlogTable.Designer.cs" />
     <Compile Remove="Migrations\20191129084806_CreateBlogTable.cs" />
     <Compile Remove="Migrations\20191129084806_CreateBlogTable.Designer.cs" />
+    <Compile Remove="Migrations\20191205033224_Created_Blog_Entity.cs" />
+    <Compile Remove="Migrations\20191205033224_Created_Blog_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20191205033539_Created_Blog_Entity.cs" />
+    <Compile Remove="Migrations\20191205033539_Created_Blog_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20191205034346_Created_Blog_Entity.cs" />
+    <Compile Remove="Migrations\20191205034346_Created_Blog_Entity.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
