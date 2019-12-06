@@ -17,7 +17,7 @@ namespace Poi.Moe.Blog
         /// <summary>
         /// 多对一
         /// </summary>
-        public virtual ICollection<Article> Articles { get; set; }
+        public virtual ICollection<Article> Articles { get; set; }  
 
     }
 }
