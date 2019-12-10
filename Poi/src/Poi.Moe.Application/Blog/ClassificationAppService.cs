@@ -5,7 +5,8 @@ using Volo.Abp.Domain.Repositories;
 
 namespace Poi.Moe.Blog
 {
-    public class ClassificationAppService : CrudAppService<Classification, ClassificationDto, Guid,
+    public class ClassificationAppService :
+        CrudAppService<Classification, ClassificationDto, Guid,
         CreateUpdateClassificationDto, CreateUpdateClassificationDto>, IClassificationAppService
     {
         public ClassificationAppService(IRepository<Classification, Guid> repository)
